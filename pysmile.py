@@ -596,7 +596,7 @@ def SmileBasic_Console_Palette(sb_color):
 	return (0, 0, 0);
 
 def SmileBasic_Hex_Console_Palette(sb_color):
-	return SmileBasic_Console_Palette(int(sb_code, 16));
+	return SmileBasic_Console_Palette(int(sb_color, 16));
 
 def SmileBasic_Graphic_Palette(sb_color):
 	if(sb_color==0):
@@ -1120,7 +1120,7 @@ def Print_C_Color(color):
 	return str(color[0])+", "+str(color[1])+", "+str(color[2]);
 
 def SmileBasic_Hex_Graphic_Palette(sb_color):
-	return SmileBasic_Graphic_Palette(int(sb_code, 16));
+	return SmileBasic_Graphic_Palette(int(sb_color, 16));
 
 use_screen = 0;
 
